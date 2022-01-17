@@ -1,0 +1,13 @@
+user:
+  greeting: ${message}
+
+#server:
+#  port: 8080
+#  servlet:
+#    context-path: /demo
+
+jwt:
+  clientId: auth
+  client-secret: secret
+  accessTokenValiditySeconds: 120
+  refreshTokenValiditySeconds: 1000
