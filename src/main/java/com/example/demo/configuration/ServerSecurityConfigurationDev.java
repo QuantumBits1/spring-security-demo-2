@@ -1,4 +1,4 @@
-package com.example.demo.security;
+package com.example.demo.configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
@@ -11,9 +11,9 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Configuration
 @Order(98)  //define ordering of annotated components or beans autowired beans of the same type based on their value
 public class ServerSecurityConfigurationDev extends WebSecurityConfigurerAdapter {
-    @Override
+    /*@Override
     protected void configure(HttpSecurity http) throws Exception {
         http.cors().and()
                 .csrf().disable();
-    }
+    }*/
 }
