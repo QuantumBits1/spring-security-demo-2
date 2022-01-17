@@ -10,7 +10,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 //disable cross-origin-access policy
 @Configuration
 @Order(98)  //define ordering of annotated components or beans autowired beans of the same type based on their value
-public class ServerSecurityConfigDev extends WebSecurityConfigurerAdapter {
+public class ServerSecurityConfigurationDev extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.cors().and()
